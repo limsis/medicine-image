@@ -1,7 +1,25 @@
+# 基础依赖
+numpy>=1.19.0
+Pillow>=8.0.0
+
+# PyTorch - 根据你的系统选择安装
+# CUDA版本推荐:
+# torch>=2.0.0
+# torchvision>=0.15.0
+
+# CPU版本:
 torch>=1.8.0
 torchvision>=0.9.0
-numpy>=1.19.0
-scipy>=1.5.0
-Pillow>=8.0.0
-tqdm>=4.50.0
-tensorboard>=2.8.0
+
+# 可选依赖（用于Word文档转换）
+python-docx>=0.8.11
+
+# 可选依赖（用于进度条）
+tqdm>=4.0.0
+
+# 可选依赖（用于TensorBoard日志）
+# tensorboard>=2.0.0
+
+# 注意: 
+# - 如果有GPU，建议安装CUDA版本的PyTorch以获得更好性能
+# - 访问 https://pytorch.org/get-started/locally/ 获取适合你系统的安装命令

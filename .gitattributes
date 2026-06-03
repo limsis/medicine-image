@@ -1,0 +1,52 @@
+# 默认使用LF换行
+* text=auto
+
+# Python文件
+*.py text diff=python
+
+# Markdown文档
+*.md text diff=markdown
+*.markdown text diff=markdown
+
+# 图片文件（不进行diff）
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bmp binary
+*.tiff binary
+*.tif binary
+
+# PDF文件
+*.pdf binary
+
+# Word文档
+*.docx binary
+*.doc binary
+
+# 压缩文件
+*.zip binary
+*.tar binary
+*.gz binary
+*.rar binary
+
+# 模型权重文件
+*.pt binary
+*.pth binary
+*.ckpt binary
+*.h5 binary
+*.hdf5 binary
+
+# 数据文件
+*.npy binary
+*.npz binary
+*.mat binary
+
+# Jupyter Notebooks (使用专门的diff工具)
+*.ipynb text eol=lf
+
+# 配置文件
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
